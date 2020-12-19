@@ -31,6 +31,9 @@ struct ContentView: View {
             }
         }
     }
+//   init(){
+//        print("Content View init method is called")
+//    }
 }
 
 struct ContentView_Previews: PreviewProvider {

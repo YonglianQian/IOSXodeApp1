@@ -14,6 +14,9 @@ struct SwiftUIView: View {
             .foregroundColor(.green)
             .font(.title)
     }
+//    func Init(){
+//        print("SwiftUIView init method is called")
+//    }
 }
 
 struct SwiftUIView_Previews: PreviewProvider {
