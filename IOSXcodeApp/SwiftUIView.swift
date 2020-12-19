@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import AppCenterAnalytics
 
 struct SwiftUIView: View {
     var body: some View {
@@ -14,9 +15,13 @@ struct SwiftUIView: View {
             .foregroundColor(.green)
             .font(.title)
     }
-//    func Init(){
-//        print("SwiftUIView init method is called")
-//    }
+    init(){
+        let date=Date()
+        let df=DateFormatter()
+        df.dateFormat="yyyy-MM-dd HH:mm:ss"
+        print("SwiftUIView init method: "+df.string(from: date))
+        Analytics.trackEvent("SwiftUIView init method: "+df.string(from: date))
+    }
 }
 
 struct SwiftUIView_Previews: PreviewProvider {

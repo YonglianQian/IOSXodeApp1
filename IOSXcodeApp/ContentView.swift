@@ -6,6 +6,8 @@
 //
 
 import SwiftUI
+import AppCenter
+import AppCenterAnalytics
 
 struct ContentView: View {
     var body: some View {
@@ -31,9 +33,13 @@ struct ContentView: View {
             }
         }
     }
-//   init(){
-//        print("Content View init method is called")
-//    }
+   init(){
+    let date=Date()
+    let df=DateFormatter()
+    df.dateFormat="yyyy-MM-dd HH:mm:ss"
+    print("Content View init method is called"+df.string(from: date))
+    Analytics.trackEvent("Content View Init method: "+df.string(from: date))
+    }
 }
 
 struct ContentView_Previews: PreviewProvider {
