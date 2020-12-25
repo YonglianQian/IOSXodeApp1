@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		16452D5341EEA43F731BF70D /* Pods_IOSXcodeApp_IOSXcodeAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 040746E43CF8C521F0D5C2AE /* Pods_IOSXcodeApp_IOSXcodeAppUITests.framework */; };
+		47C6C9A60DDAD3A2395C3D41 /* Pods_IOSXcodeApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4532BCE2F5594BD477919529 /* Pods_IOSXcodeApp.framework */; };
 		AB9F2854258DA94F00FAA0D0 /* IOSXcodeAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9F2853258DA94F00FAA0D0 /* IOSXcodeAppApp.swift */; };
 		AB9F2856258DA94F00FAA0D0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9F2855258DA94F00FAA0D0 /* ContentView.swift */; };
 		AB9F2858258DA95100FAA0D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB9F2857258DA95100FAA0D0 /* Assets.xcassets */; };
@@ -14,6 +16,7 @@
 		AB9F2866258DA95100FAA0D0 /* IOSXcodeAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9F2865258DA95100FAA0D0 /* IOSXcodeAppTests.swift */; };
 		AB9F2871258DA95100FAA0D0 /* IOSXcodeAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9F2870258DA95100FAA0D0 /* IOSXcodeAppUITests.swift */; };
 		AB9F2882258DAB5900FAA0D0 /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB9F2881258DAB5900FAA0D0 /* SwiftUIView.swift */; };
+		DF53488C707785EF55B74499 /* Pods_IOSXcodeAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C911BAECE6EB3322C41AEEFC /* Pods_IOSXcodeAppTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +60,33 @@
 		D3405B7C9790749E81030C00 /* Pods-IOSXcodeApp-IOSXcodeAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOSXcodeApp-IOSXcodeAppUITests.release.xcconfig"; path = "Target Support Files/Pods-IOSXcodeApp-IOSXcodeAppUITests/Pods-IOSXcodeApp-IOSXcodeAppUITests.release.xcconfig"; sourceTree = "<group>"; };
 		E5CB9F1E05DEE002F01FA600 /* Pods-IOSXcodeAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOSXcodeAppTests.release.xcconfig"; path = "Target Support Files/Pods-IOSXcodeAppTests/Pods-IOSXcodeAppTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		76320CBE4C33E196C6DC4998 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF53488C707785EF55B74499 /* Pods_IOSXcodeAppTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		76BC45E7675789D246A7EB53 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47C6C9A60DDAD3A2395C3D41 /* Pods_IOSXcodeApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0216B0B725B91F754DCA31B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16452D5341EEA43F731BF70D /* Pods_IOSXcodeApp_IOSXcodeAppUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		0CA6D0C7E40ECBED7100EC02 /* Frameworks */ = {
@@ -153,6 +183,7 @@
 				ED09924A0A397E9E3D6C2A64 /* [CP] Check Pods Manifest.lock */,
 				AB9F284C258DA94F00FAA0D0 /* Sources */,
 				AB9F284E258DA94F00FAA0D0 /* Resources */,
+				76BC45E7675789D246A7EB53 /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -170,6 +201,7 @@
 				A8FDA73064F7955E357A0EB2 /* [CP] Check Pods Manifest.lock */,
 				AB9F285D258DA95100FAA0D0 /* Sources */,
 				AB9F285F258DA95100FAA0D0 /* Resources */,
+				76320CBE4C33E196C6DC4998 /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -188,6 +220,7 @@
 				4F686088EFE4FEF629B0A45D /* [CP] Check Pods Manifest.lock */,
 				AB9F2868258DA95100FAA0D0 /* Sources */,
 				AB9F286A258DA95100FAA0D0 /* Resources */,
+				C0216B0B725B91F754DCA31B /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -416,6 +449,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				EXCLUDED_ARCHS = arm64;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -477,6 +511,8 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXCLUDED_ARCHS = "";
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -488,6 +524,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
